@@ -6,7 +6,11 @@ from urllib.request import urlopen
 import streamlit as st
 import numpy as np
 import requests
-from bs4 import BeautifulSoup
+try:
+    from bs4 import BeautifulSoup
+except :
+    from BeautifulSoup import BeautifulSoup 
+    
 
 source = requests.get("https://www.ups.com/worldshiphelp/WSA/ENG/AppHelp/mergedProjects/CORE/Codes/Country_Territory_and_Currency_Codes.htm").text
 soup = BeautifulSoup(source,'lxml')
