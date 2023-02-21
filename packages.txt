@@ -1,4 +1,0 @@
-requests-dev
-bs4-dev
-pandas-dev
-numpy-dev
